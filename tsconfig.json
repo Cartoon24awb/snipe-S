@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "removeComments": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "lib": ["ES2020"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "alwaysStrict": true,
+    "declaration": true,
+    "strict": true,
+    "incremental": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "types": ["node"],
+    "rootDir": "src"
+  },
+  "include": ["src/", "tools/scripts/src"],
+  "exclude": ["node_modules"],
+  "typedocOptions": {
+    "out": "./docs",
+    "readme": "./README.md",
+    "name": "snipe-it.js",
+    "exclude": ["**/node_modules/**"],
+    "mode": "file",
+    "excludeNotExported": true
+  }
+}
